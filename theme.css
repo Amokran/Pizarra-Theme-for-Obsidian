@@ -1,0 +1,65 @@
+
+body {
+	--radius-s: 12px;
+	--radius-m: 12px;
+	--radius-l: 12px;
+	--input-radius: 16px;
+	--tab-radius-active: 8px;
+	--checkbox-radius: 16px;
+	--toggle-radius: 16px;
+	--toggle-thumb-radius: 16px;
+	--slider-thumb-radius: 16px;
+}
+
+.workspace-tab-header.is-active::before, .workspace-tab-header.is-active::after {
+	display: none;
+}
+
+svg * {
+	stroke-linecap: square;
+	stroke-linejoin: miter;
+}
+
+.menu {
+	padding: var(--size-2-1);
+}
+
+.menu-item {
+	padding: var(--size-4-1) var(--size-4-2);
+}
+
+.menu-separator {
+	margin: var(--size-2-1) calc(var(--size-2-1) * -1);
+}
+
+.theme-dark {
+
+  --background-primary: #444446;
+  --background-secondary: rgb(61, 72, 88);
+
+  --text-normal: rgb(225, 229, 241);
+  --text-faint:  rgb(245, 184, 92);
+  --text-muted:  rgb(226, 102, 52);
+  --text-selection: rgb(48, 17, 187);
+  
+  --list-marker-color: #ca5e5e;
+  --list-bullet-radius: 6px;
+  --list-bullet-size: 6px; 
+  --list-marker-color-collapsed: #ca5e5e;
+}
+
+.theme-light {
+	
+  --background-primary: #b7b7b9;
+  --background-secondary: rgb(130, 155, 192);
+
+  --text-normal: rgb(67, 68, 71);
+  --text-faint:  rgb(238, 227, 133);
+  --text-muted:  rgb(102, 40, 16);
+  --text-selection: rgb(48, 17, 187);
+  
+  --list-marker-color: #797109;
+  --list-bullet-radius: 6px;
+  --list-bullet-size: 6px; 
+  --list-marker-color-collapsed:#797109;
+}
