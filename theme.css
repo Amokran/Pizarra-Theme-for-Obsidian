@@ -34,12 +34,12 @@ svg * {
 
 .theme-dark {
 
-  --background-primary: #444446;
+  --background-primary: rgb(61, 72, 88);/* #444446;*/
   --background-secondary: rgb(61, 72, 88);
 
   --text-normal: rgb(225, 229, 241);
   --text-faint:  rgb(245, 184, 92);
-  --text-muted:  rgb(226, 102, 52);
+  --text-muted:  rgb(226, 102, 52); /*rgb(209, 166, 147);*/
   --text-selection: rgb(48, 17, 187);
   
   --list-marker-color: #ca5e5e;
@@ -51,11 +51,11 @@ svg * {
 .theme-light {
 	
   --background-primary: #b7b7b9;
-  --background-secondary: rgb(130, 155, 192);
+  --background-secondary: #b7b7b9;
 
   --text-normal: rgb(67, 68, 71);
-  --text-faint:  rgb(238, 227, 133);
-  --text-muted:  rgb(102, 40, 16);
+  --text-faint:  rgb(201, 123, 21);
+  --text-muted:  rgb(201, 97, 53);
   --text-selection: rgb(43, 230, 167);
   
   --list-marker-color: #797109;
