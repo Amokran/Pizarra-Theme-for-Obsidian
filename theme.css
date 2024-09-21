@@ -37,15 +37,20 @@ svg * {
   --background-primary: rgb(61, 72, 88);/* #444446;*/
   --background-secondary: rgb(61, 72, 88);
 
-  --text-normal: rgb(225, 229, 241);
+  --text-normal:  rgb(179, 160, 124);
   --text-faint:  rgb(245, 184, 92);
-  --text-muted:  rgb(226, 102, 52); /*rgb(209, 166, 147);*/
+  --text-muted:  rgb(146, 148, 32); /*rgb(209, 166, 147);*/
   --text-selection: rgb(48, 17, 187);
   
   --list-marker-color: #ca5e5e;
   --list-bullet-radius: 6px;
   --list-bullet-size: 6px; 
   --list-marker-color-collapsed: #ca5e5e;
+}
+
+.theme-dark .cm-s-obsidian span.cm-highlight {
+  background-color: rgb(204, 155, 19) !important;
+  color: rgb(14, 13, 13) !important;
 }
 
 .theme-light {
@@ -55,11 +60,16 @@ svg * {
 
   --text-normal: rgb(67, 68, 71);
   --text-faint:  rgb(201, 123, 21);
-  --text-muted:  rgb(201, 97, 53);
+  --text-muted:  rgb(141, 55, 19);
   --text-selection: rgb(43, 230, 167);
   
   --list-marker-color: #797109;
   --list-bullet-radius: 6px;
   --list-bullet-size: 6px; 
   --list-marker-color-collapsed:#797109;
+}
+
+.theme-dark .cm-s-obsidian span.cm-highlight {
+  background-color: rgb(204, 155, 19) !important;
+  color: rgb(14, 13, 13) !important;
 }
