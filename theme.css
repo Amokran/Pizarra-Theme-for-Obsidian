@@ -37,7 +37,7 @@ svg * {
   --background-primary: rgb(61, 72, 88);/* #444446;*/
   --background-secondary: rgb(61, 72, 88);
 
-  --text-normal:  rgb(179, 160, 124);
+  --text-normal:  rgb(10, 9, 7);
   --text-faint:  rgb(245, 184, 92);
   --text-muted:  rgb(146, 148, 32); /*rgb(209, 166, 147);*/
   --text-selection: rgb(48, 17, 187);
