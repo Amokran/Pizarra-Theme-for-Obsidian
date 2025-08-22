@@ -1,3 +1,5 @@
+/* GENERAL SETTINGS */
+/*------------------------------------------------------------------------------------------------------*/
 
 body {
 	--radius-s: 12px;
@@ -32,15 +34,18 @@ svg * {
 	margin: var(--size-2-1) calc(var(--size-2-1) * -1);
 }
 
+/* THEME DARK */
+/*------------------------------------------------------------------------------------------------------*/
+
 .theme-dark {
 
   --background-primary: rgb(61, 72, 88);/* #444446;*/
   --background-secondary: rgb(61, 72, 88);
 
-  --text-normal:  rgb(10, 9, 7);
-  --text-faint:  rgb(245, 184, 92);
-  --text-muted:  rgb(146, 148, 32); /*rgb(209, 166, 147);*/
-  --text-selection: rgb(48, 17, 187);
+  --text-normal:  rgb(160, 157, 151);
+  --text-faint:  rgb(214, 143, 37);
+  --text-muted:  rgb(218, 191, 72); /*rgb(209, 166, 147);*/
+  --text-selection: rgb(231, 174, 89);
   
   --list-marker-color: #ca5e5e;
   --list-bullet-radius: 6px;
@@ -49,27 +54,118 @@ svg * {
 }
 
 .theme-dark .cm-s-obsidian span.cm-highlight {
-  background-color: rgb(204, 155, 19) !important;
+  background-color: rgb(19, 152, 204) !important;
   color: rgb(14, 13, 13) !important;
 }
+
+/* Change background color in top ribbon */
+.theme-dark .titlebar {
+  background-color: #0e0336; /* Cambia este valor por el color que prefieras */
+}
+
+/* Change text color in top ribbon */
+.theme-dark .titlebar-title {
+  color: #8a7e15; /* Color del texto */
+}
+
+/* Colors for Code Blocks */
+.theme-dark {
+  --code-background: #2f3441;   /* fondo para inline y bloques */
+  --code-normal: #91a599;       /* color del texto dentro del código */
+}
+
+/* Headers in reading mode */
+.theme-dark .markdown-rendered h1,
+.theme-dark .markdown-rendered h2,
+.theme-dark .markdown-rendered h3,
+.theme-dark .markdown-rendered h4,
+.theme-dark .markdown-rendered h5,
+.theme-dark .markdown-rendered h6 {
+  color: #ca6130 !important;   /* Amarillo para prueba */
+}
+
+/* Headers in edition mode (CM6) */
+.theme-dark .markdown-source-view.mod-cm6 .cm-header-1 { color: #ca6130 !important; }
+.theme-dark .markdown-source-view.mod-cm6 .cm-header-2 { color: #ffab66 !important; }
+.theme-dark .markdown-source-view.mod-cm6 .cm-header-3 { color: #e0af53 !important; }
+.theme-dark .markdown-source-view.mod-cm6 .cm-header-4 { color: #2d6845 !important; }
+.theme-dark .markdown-source-view.mod-cm6 .cm-header-5 { color: #476d5c !important; }
+.theme-dark .markdown-source-view.mod-cm6 .cm-header-6 { color: #838f7e !important; }
+
+/* THEME LIGHT */
+/*------------------------------------------------------------------------------------------------------*/
 
 .theme-light {
 	
   --background-primary: #b7b7b9;
-  --background-secondary: #b7b7b9;
+  --background-secondary: #a8b3bb;
 
-  --text-normal: rgb(67, 68, 71);
-  --text-faint:  rgb(201, 123, 21);
-  --text-muted:  rgb(141, 55, 19);
-  --text-selection: rgb(43, 230, 167);
+  --text-normal: rgb(23, 23, 24);
+  --text-faint:  rgb(202, 51, 5);
+  --text-muted:  rgb(143, 37, 5);
+  --text-selection: rgb(109, 97, 112); 
   
   --list-marker-color: #797109;
   --list-bullet-radius: 6px;
   --list-bullet-size: 6px; 
   --list-marker-color-collapsed:#797109;
 }
-
-.theme-dark .cm-s-obsidian span.cm-highlight {
-  background-color: rgb(204, 155, 19) !important;
+.theme-light .cm-s-obsidian span.cm-highlight {
+  background-color: rgb(136, 74, 23) !important;
   color: rgb(14, 13, 13) !important;
+}
+
+/* Change background color in top ribbon */
+.theme-light .titlebar {
+  background-color: #2e4e74;
+}
+
+/* Change text color in top ribbon */
+.theme-light .titlebar-title {
+  color: #ddd4cf;
+}
+
+/* Colors for Code Blocks */
+.theme-light {
+  --code-background: #e2cc95;   /* fondo para inline y bloques */
+  --code-normal: #140303;       /* color del texto dentro del código */
+}
+
+
+/* Headers in reading mode */
+.theme-light .markdown-rendered h1,
+.theme-light .markdown-rendered h2,
+.theme-light .markdown-rendered h3,
+.theme-light .markdown-rendered h4,
+.theme-light .markdown-rendered h5,
+.theme-light .markdown-rendered h6 {
+  color: #ca6130 !important;   /* Amarillo para prueba */
+}
+
+/* Headers in edition mode (CM6) */
+.theme-light .markdown-source-view.mod-cm6 .cm-header-1 { color: #9e3f13 !important; }
+.theme-light .markdown-source-view.mod-cm6 .cm-header-2 { color: #975016 !important; }
+.theme-light .markdown-source-view.mod-cm6 .cm-header-3 { color: #8f671e !important; }
+.theme-light .markdown-source-view.mod-cm6 .cm-header-4 { color: #1d5a35 !important; }
+.theme-light .markdown-source-view.mod-cm6 .cm-header-5 { color: #234b39 !important; }
+.theme-light .markdown-source-view.mod-cm6 .cm-header-6 { color: #55644e !important; }
+
+/* APPLIES TO BOTH THEMES */
+/*------------------------------------------------------------------------------------------------------*/
+
+/* ========= Code blocks: ```code``` ========= */
+/* Reading */
+.markdown-rendered pre,
+.markdown-rendered pre code,
+.markdown-preview-view pre,
+.markdown-preview-view pre code {
+  background-color: var(--code-background) !important;
+  color: var(--code-normal) !important;
+}
+
+/* Editor CM6 (asome themes still use HyperMD) */
+.markdown-source-view.mod-cm6 .HyperMD-codeblock,
+.markdown-source-view.mod-cm6 div.HyperMD-codeblock-bg {
+  background-color: var(--code-background) !important;
+  color: var(--code-normal) !important;
 }
