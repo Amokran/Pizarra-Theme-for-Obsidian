@@ -42,7 +42,7 @@ svg * {
   --background-primary: rgb(61, 72, 88);/* #444446;*/
   --background-secondary: rgb(61, 72, 88);
 
-  --text-normal:  rgb(160, 157, 151);
+  --text-normal:  rgb(236, 217, 217);
   --text-faint:  rgb(214, 143, 37);
   --text-muted:  rgb(218, 191, 72); /*rgb(209, 166, 147);*/
   --text-selection: rgb(231, 174, 89);
@@ -68,12 +68,17 @@ svg * {
   color: #8a7e15; /* Color del texto */
 }
 
+/* Color for tab ribbon */
+.theme-dark .workspace-tab-header-container {
+  background-color: #1a2a86 !important; /* color de fondo de la barra */
+  border-bottom: 1px solid #867070 !important; /* opcional, línea divisoria */
+}
+
 /* Colors for Code Blocks */
 .theme-dark {
   --code-background: #2f3441;   /* fondo para inline y bloques */
   --code-normal: #91a599;       /* color del texto dentro del código */
 }
-
 /* Headers in reading mode */
 .theme-dark .markdown-rendered h1,
 .theme-dark .markdown-rendered h2,
@@ -123,6 +128,12 @@ svg * {
 /* Change text color in top ribbon */
 .theme-light .titlebar-title {
   color: #ddd4cf;
+}
+
+/* Color for tab ribbon */
+.theme-light .workspace-tab-header-container {
+  background-color: #8daac5 !important; /* color de fondo de la barra */
+  border-bottom: 1px solid #444 !important; /* opcional, línea divisoria */
 }
 
 /* Colors for Code Blocks */
